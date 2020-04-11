@@ -27,5 +27,9 @@ public class DisplayTime {
 		System.out.println("Hello "+name);
 		new DisplayTime().display();
 	}
+	
+	public void wishMsg(int hour,String name) {
+		//plz provide implementation
+	}
 
 }

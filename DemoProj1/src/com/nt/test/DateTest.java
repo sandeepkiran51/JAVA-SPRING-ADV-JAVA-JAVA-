@@ -6,6 +6,7 @@ public class DateTest {
 	public static void main(String[] args) {
 		DisplayTime d = new DisplayTime();
 		System.out.println("current date and time is.....");
+		d.userName("sandeep");
 		d.display();
 	}
 

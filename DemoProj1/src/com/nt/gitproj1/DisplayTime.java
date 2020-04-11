@@ -21,5 +21,11 @@ public class DisplayTime {
 		
 		System.out.println("date : "+date+" hour : "+hour+" min : "+min+" sce "+sec );
 	}
+	
+	
+	public void userName(String name) {
+		System.out.println("Hello "+name);
+		new DisplayTime().display();
+	}
 
 }

@@ -24,8 +24,8 @@ public class DisplayTime {
 		sec = d.getSeconds();
 		date = d.getDate();
 		System.out.println("Today's Date and time is....");
-		System.out.println("date : " + date + "-" + month + "-" + year + "/ntime is hour:" + hour + " min : " + min
-				+ " sec " + sec);
+		System.out.println("date : " + date + "-" + month + "-" + year + "\ntime is " + hour + " : " + min
+				+ " : " + sec);
 		new DisplayTime().wishMsg(hour, name);
 		;
 	}
@@ -37,6 +37,14 @@ public class DisplayTime {
 
 	public void wishMsg(int hour, String name) {
 		// plz provide implementation
+		if(hour>9&&hour<12)
+			System.out.println("Good Morning....."+name);
+		else if(hour>12&&hour<16)
+			System.out.println("Good Afternoon..."+name);
+		else if(hour>17&& hour<20)
+			System.out.println("Good Evening....."+name);
+		else
+			System.out.println("Good Night......"+name);
 	}
 
 }

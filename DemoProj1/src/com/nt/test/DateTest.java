@@ -7,7 +7,7 @@ public class DateTest {
 		DisplayTime d = new DisplayTime();
 		System.out.println("current date and time is.....");
 		d.userName("sandeep");
-		d.display();
+		
 	}
 
 }

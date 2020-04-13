@@ -4,32 +4,39 @@ import java.util.Date;
 
 public class DisplayTime {
 	@SuppressWarnings("deprecation")
-	public void display() {
+	public void display(String name) {
 		Date d = null;
 		int hour = 0;
 		int min = 0;
 		int sec = 0;
 		int date = 0;
+		int year = 0;
+		int month = 0;
 		
-		
-		
+
 		d = new Date();
+		date = d.getDate();
+		month = d.getMonth();
+		year = 1900 + d.getYear();
+
 		hour = d.getHours();
 		min = d.getMinutes();
 		sec = d.getSeconds();
 		date = d.getDate();
-		
-		System.out.println("date : "+date+" hour : "+hour+" min : "+min+" sce "+sec );
+		System.out.println("Today's Date and time is....");
+		System.out.println("date : " + date + "-" + month + "-" + year + "/ntime is hour:" + hour + " min : " + min
+				+ " sec " + sec);
+		new DisplayTime().wishMsg(hour, name);
+		;
 	}
-	
-	
+
 	public void userName(String name) {
-		System.out.println("Hello "+name);
-		new DisplayTime().display();
+		System.out.println("Hello " + name);
+		new DisplayTime().display(name);
 	}
-	
-	public void wishMsg(int hour,String name) {
-		//plz provide implementation
+
+	public void wishMsg(int hour, String name) {
+		// plz provide implementation
 	}
 
 }

@@ -45,12 +45,14 @@ public class DisplayTime {
 			System.out.println("Good Evening....."+name);
 		else
 			System.out.println("Good Night......"+name);
+
+		
 		
 		try {
 			
 		}
 		finally {
-			System.out.println("thank you and visti again...");
+			System.out.println("thank you & visti again...");
 		}
 
 	}
